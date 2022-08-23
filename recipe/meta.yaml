@@ -1,5 +1,5 @@
 {% set name = "condax" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/condax-{{ version }}.tar.gz
-  sha256: 2d46073a0a2ae85d12769987bbf9fd0d81ab2dce9788c69924760b5f953f4e9c
+  sha256: d2002a193b9694e6f075cefb3de04be328695dfaec463a6814a69e965fd26adf
 
 build:
   number: 0
