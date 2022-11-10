@@ -39,6 +39,7 @@ test:
   commands:
     - pip check
     - condax --help
+    - condax --version
   requires:
     - pip
 
