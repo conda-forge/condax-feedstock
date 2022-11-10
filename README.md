@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/condax-feedstoc
 
 Summary: Install and run applications packaged with conda in isolated environments
 
+Documentation: https://mariusvniekerk.github.io/condax/
+
 Current build status
 ====================
 
