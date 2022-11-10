@@ -1,6 +1,5 @@
 {% set name = "condax" %}
-{% set version = "0.0.6" %}
-
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/condax-{{ version }}.tar.gz
-  sha256: d2002a193b9694e6f075cefb3de04be328695dfaec463a6814a69e965fd26adf
+  sha256: 0b155ae88a5f02ba522372cc2f633cd00e6a9e0520bfa65d897a02c0701f7c35
 
 build:
   number: 0
@@ -19,13 +18,19 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.6
+    - hatchling >=0.21.1
+    - hatch-vcs
   run:
+    - python >=3.7
     - click
-    - python >=3.6
+    - ensureconda
+    - importlib-metadata
+    - pydantic
     - pyyaml
     - requests
+    - typer
     - userpath
 
 test:
@@ -39,6 +44,7 @@ test:
 
 about:
   home: https://github.com/mariusvniekerk/condax
+  doc_url: https://mariusvniekerk.github.io/condax/
   summary: Install and run applications packaged with conda in isolated environments
   license: MIT
   license_file: LICENSE-MIT
