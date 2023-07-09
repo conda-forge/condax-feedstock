@@ -1,11 +1,11 @@
-About condax
-============
+About condax-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/condax-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mariusvniekerk/condax
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/condax-feedstock/blob/main/LICENSE.txt)
 
 Summary: Install and run applications packaged with conda in isolated environments
 
