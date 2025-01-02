@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/condax-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/condax-{{ version }}.tar.gz
   sha256: 6813f99916c554f09b5b67f1202990322fbb6ea6a102081112cbc1ddc7d2e61a
 
 build:
@@ -14,16 +14,16 @@ build:
   entry_points:
     - condax = condax.cli:cli
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling >=0.21.1
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - click
     - requests
     - userpath
@@ -42,6 +42,7 @@ test:
     - condax --version
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mariusvniekerk/condax
